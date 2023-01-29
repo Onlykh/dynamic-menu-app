@@ -11,6 +11,7 @@ class Menu extends Model
 
     protected $fillable = [
         'name',
+        'description',
         'url',
         'order',
         'visible',
