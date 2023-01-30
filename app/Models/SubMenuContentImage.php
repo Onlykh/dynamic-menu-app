@@ -25,6 +25,8 @@ class SubMenuContentImage extends Model
 
     public function getFullPathAttribute()
     {
-        return Storage::url($this->attributes['url']);
+
+        return  asset($this->attributes['url']);
+
     }
 }

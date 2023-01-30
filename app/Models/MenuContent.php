@@ -14,7 +14,7 @@ class MenuContent extends Model
         'title',
         'description'
     ];
-
+    protected $with = ['images'];
     public function menu()
     {
         return $this->belongsTo(Menu::class);

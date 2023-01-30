@@ -10,7 +10,7 @@ class MenuController extends Controller
 {
     public function index()
     {
-        $menus = Menu::with(['contents', 'submenus'])->get();
+        $menus = Menu::with(['submenus'])->get();
 
         return response()->json($menus);
     }

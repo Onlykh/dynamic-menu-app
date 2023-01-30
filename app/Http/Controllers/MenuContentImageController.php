@@ -22,7 +22,7 @@ class MenuContentImageController extends Controller
             [
                 'title' => 'required',
                 'url' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-                'menu_content_id' => 'required|exists:menu_contents,id',
+                'menu_content_id' => 'required|exists:menu_contents,id'
             ]
         );
 

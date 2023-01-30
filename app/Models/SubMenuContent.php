@@ -14,7 +14,9 @@ class SubMenuContent extends Model
         'title',
         'description'
     ];
-
+    protected $with = [
+        'images'
+    ];
     public function submenu()
     {
         return $this->belongsTo(SubMenu::class);

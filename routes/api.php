@@ -33,3 +33,4 @@ Route::resource('menu-content-images', MenuContentImageController::class);
 Route::resource('sub-menus', SubMenuController::class);
 Route::resource('sub-menu-contents', SubMenuContentController::class);
 Route::resource('sub-menu-content-images', SubMenuContentImageController::class);
+
