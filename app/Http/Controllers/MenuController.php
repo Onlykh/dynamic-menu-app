@@ -21,6 +21,7 @@ class MenuController extends Controller
             $request->all(),
             [
                 'name' => 'required',
+                'description' => 'required',
                 'url' => 'required',
                 'order' => 'required',
                 'visible' => 'required',
@@ -39,6 +40,7 @@ class MenuController extends Controller
 
         $menu = Menu::create([
             'name' => $request->all()['name'],
+            'description' => $request->all()['description'],
             'url' => $request->all()['url'],
             'order' => $request->all()['order'],
             'visible' => $request->all()['visible'],
@@ -62,6 +64,7 @@ class MenuController extends Controller
             $request->all(),
             [
                 'name' => 'required',
+                'description' => 'required',
                 'url' => 'required',
                 'order' => 'required',
                 'visible' => 'required',
@@ -80,6 +83,7 @@ class MenuController extends Controller
 
         $menu->update([
             'name' => $request->all()['name'],
+            'description' => $request->all()['description'],
             'url' => $request->all()['url'],
             'order' => $request->all()['order'],
             'visible' => $request->all()['visible'],

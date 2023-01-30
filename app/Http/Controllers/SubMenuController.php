@@ -21,6 +21,7 @@ class SubMenuController extends Controller
             $request->all(),
             [
                 'name' => 'required',
+                'description' => 'required',
                 'url' => 'required',
                 'order' => 'required',
                 'visible' => 'required',
@@ -40,6 +41,7 @@ class SubMenuController extends Controller
 
         $subMenu = SubMenu::create([
             'name' => $request->all()['name'],
+            'description' => $request->all()['description'],
             'url' => $request->all()['url'],
             'order' => $request->all()['order'],
             'visible' => $request->all()['visible'],
@@ -65,6 +67,7 @@ class SubMenuController extends Controller
             $request->all(),
             [
                 'name' => 'required',
+                'description' => 'required',
                 'url' => 'required',
                 'order' => 'required',
                 'visible' => 'required',
@@ -84,6 +87,7 @@ class SubMenuController extends Controller
 
         $subMenu->update([
             'name' => $request->all()['name'],
+            'description' => $request->all()['description'],
             'url' => $request->all()['url'],
             'order' => $request->all()['order'],
             'visible' => $request->all()['visible'],

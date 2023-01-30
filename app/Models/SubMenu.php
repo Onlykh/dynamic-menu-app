@@ -11,6 +11,7 @@ class SubMenu extends Model
 
     protected $fillable = [
         'name',
+        'description',
         'url',
         'order',
         'visible',
